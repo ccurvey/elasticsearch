@@ -357,7 +357,7 @@ Pass each field's properties as a JSON object. This object should contain the <<
 PUT /my-explicit-mappings-books
 {
   "mappings": {
-    "dynamic": false,  <1>
+    "dynamic": "strict",  <1>
     "properties": {  <2>
       "name": { "type": "text" },
       "author": { "type": "text" },
